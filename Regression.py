@@ -14,6 +14,8 @@ from sklearn.naive_bayes import GaussianNB
 titanic = pd.read_csv("../input/train.csv")
 test = pd.read_csv("../input/test.csv")
 
+#Above dataset is available at https://www.kaggle.com/c/titanic/data
+
 titanic.head()
 titanic = titanic.drop(['PassengerId','Name','Ticket'],axis=1)
 test = test.drop(['Name','Ticket'],axis=1)
